@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/hero-portrait.jpg";
 import bg from "@/assets/hero-bg.jpg";
 import { ArrowDown } from "lucide-react";
 
@@ -55,7 +54,7 @@ export const Hero = () => {
             <div className="absolute -inset-3 bg-gradient-gold opacity-30 blur-2xl" />
             <div className="relative h-full w-full overflow-hidden gold-border">
               <img
-                src={portrait}
+                src="/portrait.png"
                 alt="Portrait of Stephen Egar Ayim (Amasteve)"
                 width={1024}
                 height={1280}
