@@ -55,10 +55,14 @@ export const Hero = () => {
             <div className="relative h-full w-full overflow-hidden gold-border">
               <img
                 src="/portrait.png"
-                alt="Portrait of Stephen Egar Ayim (Amasteve)"
+                alt="Stephen Egar Ayim (Amasteve) — Founder & CEO, Digital Marketer, Web Developer, and Community Advocate in Nigeria"
                 width={1024}
                 height={1280}
                 className="h-full w-full object-cover"
+                loading="eager"
+                fetchPriority="high"
+                decoding="async"
+                itemProp="image"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-background border border-primary/40 px-6 py-4 shadow-elegant">
