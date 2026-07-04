@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import portrait from "@/assets/hero-portrait.jpg";
+import portrait from "@/assets/portrait.png.asset.json";
 import bg from "@/assets/hero-bg.jpg";
 import { ArrowDown } from "lucide-react";
 
