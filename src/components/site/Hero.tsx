@@ -55,7 +55,7 @@ export const Hero = () => {
             <div className="absolute -inset-3 bg-gradient-gold opacity-30 blur-2xl" />
             <div className="relative h-full w-full overflow-hidden gold-border">
               <img
-                src={portrait}
+                src={portrait.url}
                 alt="Portrait of Stephen Egar Ayim (Amasteve)"
                 width={1024}
                 height={1280}
