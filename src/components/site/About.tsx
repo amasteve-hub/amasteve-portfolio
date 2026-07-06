@@ -28,7 +28,7 @@ export const About = () => {
           <div className="grid grid-cols-2 gap-6 text-sm uppercase tracking-widest">
             <div>
               <div className="text-muted-foreground/70">Based in</div>
-              <div className="text-foreground mt-1">Ghana</div>
+              <div className="text-foreground mt-1">NIGERIA</div>
             </div>
             <div>
               <div className="text-muted-foreground/70">Available for</div>
