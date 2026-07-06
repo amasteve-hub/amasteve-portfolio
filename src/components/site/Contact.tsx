@@ -18,7 +18,7 @@ const socials = [
   { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/amasteve" },
   { icon: Youtube, label: "YouTube", href: "https://youtube.com/@amasteve" },
   { icon: Instagram, label: "Instagram", href: "https://instagram.com/amasteve" },
-  { icon: Mail, label: "Email", href: "mailto:hello@amasteve.com" },
+  { icon: Mail, label: "Email", href: "mailto:stephenayim9@gmail.com" },
 ];
 
 // Custom X (Twitter) icon
@@ -47,7 +47,7 @@ export const Contact = () => {
     setLoading(true);
     const subject = encodeURIComponent(`New enquiry from ${parsed.data.name}`);
     const body = encodeURIComponent(`${parsed.data.message}\n\n— ${parsed.data.name} (${parsed.data.email})`);
-    window.location.href = `mailto:hello@amasteve.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:stephenayim9@gmail.com?subject=${subject}&body=${body}`;
     setTimeout(() => {
       toast.success("Opening your mail client…");
       setLoading(false);
@@ -69,10 +69,10 @@ export const Contact = () => {
           </p>
 
           <div className="space-y-3 pt-4">
-            <a href="mailto:hello@amasteve.com" className="story-link block text-lg text-foreground">
-              hello@amasteve.com
+            <a href="mailto:stephenayim9@gmail.com" className="story-link block text-lg text-foreground">
+              stephenayim9@gmail.com
             </a>
-            <p className="text-sm text-muted-foreground uppercase tracking-widest">Ghana · Available worldwide</p>
+            <p className="text-sm text-muted-foreground uppercase tracking-widest">NIGERIA · AVAILABLE WORLDWIDE</p>
           </div>
 
           <div className="flex items-center gap-5 pt-4">
