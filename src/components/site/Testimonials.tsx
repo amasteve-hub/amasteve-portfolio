@@ -3,18 +3,18 @@ import { Quote } from "lucide-react";
 const items = [
   {
     quote: "Working with Amasteve elevated our brand beyond what we imagined. Rigorous, kind, and relentlessly creative.",
-    name: "Client Name",
-    role: "Founder, Placeholder Co.",
+    name: "MRS KUKU EWORO",
+    role: "FOUNDER, JODENKE ENTERPRISE",
   },
   {
     quote: "A rare combination of technical depth and cultural intuition. The team delivered on every promise.",
-    name: "Client Name",
-    role: "Director, Placeholder Org.",
+    name: " ",
+    role: " ",
   },
   {
     quote: "From strategy to launch, everything moved with intention. Our metrics — and our people — feel it.",
-    name: "Client Name",
-    role: "CMO, Placeholder Ltd.",
+    name: " ",
+    role: " ",
   },
 ];
 
@@ -27,8 +27,8 @@ export const Testimonials = () => {
           <h2 className="font-display text-5xl md:text-6xl">
             In their <span className="italic text-gold">words</span>.
           </h2>
-          <p className="text-sm text-muted-foreground uppercase tracking-widest">
-            Placeholders — real endorsements coming soon.
+          <p className="text-sm text-muted-foreground uppercase tracking-widest h-5">
+            {" "}
           </p>
         </div>
 
