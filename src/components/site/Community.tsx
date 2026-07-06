@@ -1,4 +1,4 @@
-import community from "@/assets/community.jpg";
+import community from "@/assets/community-fieldwork.png.asset.json";
 import { Sprout, HandHeart, GraduationCap } from "lucide-react";
 
 const stories = [
@@ -26,8 +26,8 @@ export const Community = () => {
         <div className="lg:col-span-6 relative">
           <div className="aspect-[5/4] overflow-hidden gold-border">
             <img
-              src={community}
-              alt="Community engagement in rural Ghana"
+              src={community.url}
+              alt="Stephen Egar Ayim leading grassroots mobilisation with his team in Ekajuk Ward, Ogoja LGA, Cross River State"
               loading="lazy"
               className="w-full h-full object-cover"
             />
