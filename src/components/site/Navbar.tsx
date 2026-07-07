@@ -69,7 +69,7 @@ export const Navbar = () => {
               </li>
             ))}
             <li>
-              <a href="/cv.txt" download className="block py-2 text-primary">Download CV</a>
+              <a href={import.meta.env.BASE_URL + "cv.txt"} download className="block py-2 text-primary">Download CV</a>
             </li>
           </ul>
         </div>
