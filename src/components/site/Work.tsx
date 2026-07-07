@@ -38,6 +38,8 @@ export const Work = () => {
                   alt={w.title}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-[1.2s] group-hover:scale-105"
+                  decoding="async"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 600px"
                 />
               </div>
               <div className="p-6 md:p-8 flex items-end justify-between gap-6 border-t border-border/60">

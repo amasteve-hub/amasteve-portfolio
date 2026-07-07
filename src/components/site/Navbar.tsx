@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef, useCallback } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -11,15 +11,42 @@ const links = [
   { href: "#contact", label: "Contact" },
 ];
 
+// Debounce utility function
+const debounce = (func: (...args: any[]) => void, delay: number) => {
+  let timeout: ReturnType<typeof setTimeout>;
+  return (...args: any[]) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => func(...args), delay);
+  };
+};
+
 export const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
+  // Check scroll position immediately on mount and first scroll
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 20);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
+    const checkScroll = () => setScrolled(window.scrollY > 20);
+    checkScroll();
+  }, []);
+
+  // Debounced scroll handler to avoid excessive re-renders
+  useEffect(() => {
+    const debouncedHandleScroll = debounce(() => {
+      setScrolled(window.scrollY > 20);
+    }, 50); // Debounce with 50ms delay
+
+    window.addEventListener("scroll", debouncedHandleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", debouncedHandleScroll);
+      if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    };
+  }, []);
+
+  // Close mobile menu when clicking a link
+  const handleLinkClick = useCallback(() => {
+    setOpen(false);
   }, []);
 
   return (
@@ -61,7 +88,7 @@ export const Navbar = () => {
               <li key={l.href}>
                 <a
                   href={l.href}
-                  onClick={() => setOpen(false)}
+                  onClick={handleLinkClick}
                   className="block py-2 text-muted-foreground hover:text-primary"
                 >
                   {l.label}

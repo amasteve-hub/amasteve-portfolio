@@ -30,6 +30,8 @@ export const Community = () => {
               alt="Stephen Egar Ayim leading grassroots mobilisation with his team in Ekajuk Ward, Ogoja LGA, Cross River State"
               loading="lazy"
               className="w-full h-full object-cover"
+              decoding="async"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
           <div className="absolute -top-6 -right-6 hidden md:block bg-background border border-primary/40 px-6 py-4 shadow-elegant max-w-[220px]">

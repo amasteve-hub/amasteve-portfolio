@@ -54,15 +54,17 @@ export const Hero = () => {
             <div className="absolute -inset-3 bg-gradient-gold opacity-30 blur-2xl" />
             <div className="relative h-full w-full overflow-hidden gold-border">
               <img
-                src={import.meta.env.BASE_URL + "portrait.png"}
+                src={import.meta.env.BASE_URL + "portrait.webp"}
                 alt="Stephen Egar Ayim (Amasteve) — Founder & CEO, Digital Marketer, Web Developer, and Community Advocate in Nigeria"
-                width={1024}
-                height={1280}
+                width={512}
+                height={640}
                 className="h-full w-full object-cover"
                 loading="eager"
                 fetchPriority="high"
                 decoding="async"
                 itemProp="image"
+                sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 512px"
+                srcSet={`${import.meta.env.BASE_URL}portrait-sm.webp 256w, ${import.meta.env.BASE_URL}portrait.webp 512w, ${import.meta.env.BASE_URL}portrait-lg.webp 1024w`}
               />
             </div>
             <div className="absolute -bottom-6 -left-6 bg-background border border-primary/40 px-6 py-4 shadow-elegant">
