@@ -21,7 +21,7 @@ export const Hero = () => {
           </h1>
           <p className="max-w-xl text-lg text-muted-foreground leading-relaxed">
             Digital marketer, front-end engineer, designer and storyteller.
-            Building brands, communities and technology that move Ghana — and the world — forward.
+            Building brands, communities and technology that move Nigeria and the world forward.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <Button asChild size="lg" className="bg-gradient-gold text-primary-foreground hover:opacity-90 shadow-gold rounded-none px-8 h-12 uppercase tracking-widest text-xs">
@@ -43,8 +43,8 @@ export const Hero = () => {
             </div>
             <div className="h-10 w-px bg-border" />
             <div>
-              <div className="text-2xl font-display text-foreground">1</div>
-              <div>Ward Served</div>
+              <div className="text-2xl font-display text-foreground uppercase">OVER</div>
+              <div>1K CLIENTS SERVED</div>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ export const Hero = () => {
             </div>
             <div className="absolute -bottom-6 -left-6 bg-background border border-primary/40 px-6 py-4 shadow-elegant">
               <div className="text-[10px] uppercase tracking-[0.3em] text-muted-foreground">Currently</div>
-              <div className="font-display text-lg text-primary">Ward Rural Development Officer</div>
+              <div className="font-display text-lg text-primary">SA To Cross River State Governor on Rural Development/Ward Rural Development Officer Ekajuk Ward 1</div>
             </div>
           </div>
         </div>
