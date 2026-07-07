@@ -37,7 +37,7 @@ export const Footer = () => {
             <a href="https://x.com/amasteve" aria-label="X" className="hover:text-primary"><XIcon /></a>
             <a href="mailto:hello@amasteve.com" aria-label="Email" className="hover:text-primary"><Mail size={16} /></a>
           </div>
-          <a href="/cv.txt" download className="inline-block mt-6 text-xs uppercase tracking-widest text-primary story-link">
+          <a href={import.meta.env.BASE_URL + "cv.txt"} download className="inline-block mt-6 text-xs uppercase tracking-widest text-primary story-link">
             Download CV
           </a>
         </div>

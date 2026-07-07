@@ -43,7 +43,7 @@ export const Navbar = () => {
         </ul>
         <div className="hidden md:block">
           <Button asChild variant="outline" size="sm" className="border-primary/60 text-primary hover:bg-primary hover:text-primary-foreground">
-            <a href="/cv.txt" download>Download CV</a>
+            <a href={import.meta.env.BASE_URL + "cv.txt"} download>Download CV</a>
           </Button>
         </div>
         <button
@@ -69,7 +69,7 @@ export const Navbar = () => {
               </li>
             ))}
             <li>
-              <a href="/cv.txt" download className="block py-2 text-primary">Download CV</a>
+              <a href={import.meta.env.BASE_URL + "cv.txt"} download className="block py-2 text-primary">Download CV</a>
             </li>
           </ul>
         </div>
